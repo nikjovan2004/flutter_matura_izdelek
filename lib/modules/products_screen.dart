@@ -69,34 +69,6 @@ class ProductsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: 20.h,
-            ),
-            //Categories
-            Text(
-              'Categories',
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 24.0.sp,
-                color: cubit.isDark ? Colors.white : Colors.black,
-              ),
-            ),
-            SizedBox(
-              height: 10.0.h,
-            ),
-            SizedBox(
-              height: 90.0.h,
-              child: ListView.separated(
-                physics: const BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) =>
-                    categoryItemBuilder(categoryModel.data.data![index]),
-                separatorBuilder: (context, index) => SizedBox(
-                  width: 10.0.w,
-                ),
-                itemCount: categoryModel.data.data!.length,
-              ),
-            ),
-            SizedBox(
               height: 20.0.h,
             ),
             //products
