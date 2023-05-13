@@ -40,7 +40,7 @@ class FavoritesScreen extends StatelessWidget {
                 Text(
                   'Your favourites',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: const Color.fromARGB(255, 0, 0, 0),
                     fontSize: 15.0.sp,
                   ),
                 ),

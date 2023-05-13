@@ -10,6 +10,8 @@ import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/cubits/home_cubit/home_cubit.dart';
 import 'package:shop_app/shared/cubits/home_cubit/home_states.dart';
 import 'package:shop_app/shared/network/styles/colors.dart';
+import 'package:shop_app/modules/product_details_screen.dart';
+
 
 class ProductsScreen extends StatelessWidget {
   const ProductsScreen({super.key});
@@ -141,9 +143,18 @@ class ProductsScreen extends StatelessWidget {
   }
 
   Widget gridProductBuilder(Product product, context) {
-    HomeCubit cubit = HomeCubit.get(context);
+  HomeCubit cubit = HomeCubit.get(context);
 
-    return Material(
+  return GestureDetector(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ProductDetailsScreen(product: product),
+        ),
+      );
+    },
+    child: Material(
       elevation: 3.0,
       borderRadius: BorderRadius.circular(20.0),
       color: cubit.isDark ? asmarFate7 : Colors.white,
@@ -172,9 +183,7 @@ class ProductsScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(2.0),
                           decoration: BoxDecoration(
                               color: blue,
-                              borderRadius: BorderRadius.circular(
-                                5.0,
-                              )),
+                              borderRadius: BorderRadius.circular(5.0)),
                           child: Text(
                             'Sale',
                             style: TextStyle(
@@ -262,8 +271,10 @@ class ProductsScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
+
 
   Widget categoryItemBuilder(DataModel_C category) {
     return Container(
