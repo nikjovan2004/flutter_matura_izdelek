@@ -38,7 +38,7 @@ class FavoritesScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Your favourites',
+                  'Your favorites',
                   style: TextStyle(
                     color: const Color.fromARGB(255, 0, 0, 0),
                     fontSize: 15.0.sp,

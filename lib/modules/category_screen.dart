@@ -25,9 +25,9 @@ class CategoryScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20.0,),
               child: ListView.separated(
                 physics: const BouncingScrollPhysics(),
-                itemBuilder: (context, index) => categoryBuilder(HomeCubit.get(context).categoryModel.data.data![index], context),
+                itemBuilder: (context, index) => categoryBuilder(HomeCubit.get(context).categoryModel!.data.data![index], context),
                 separatorBuilder: (context, index) => const SizedBox(height: 20.0,),
-                itemCount: HomeCubit.get(context).categoryModel.data.data!.length,
+                itemCount: HomeCubit.get(context).categoryModel!.data.data!.length,
               ),
             ),
             fallback:(context) => Center(child: loading),

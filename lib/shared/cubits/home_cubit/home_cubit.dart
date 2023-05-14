@@ -18,7 +18,7 @@ import 'package:shop_app/shared/network/end_points.dart';
 import 'package:shop_app/shared/network/local/cache_helper.dart';
 import 'package:shop_app/shared/network/remote/dio.dart';
 import 'package:shop_app/shared/network/styles/colors.dart';
-import '../../../models/profile_model.dart';
+import 'package:shop_app/models/profile_model.dart';
 
 class HomeCubit extends Cubit<HomeStates> {
   HomeCubit() : super(HomeInitialState());
@@ -95,7 +95,7 @@ class HomeCubit extends Cubit<HomeStates> {
     });
   }
 
-  late CategoryModel categoryModel;
+  CategoryModel? categoryModel = null;
 
   void getCategoryData() {
     DioHelper.getData(

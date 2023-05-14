@@ -43,10 +43,10 @@ class ProductsScreen extends StatelessWidget {
       },
       builder: (context, state) {
         return ConditionalBuilder(
-          condition: HomeCubit.get(context).homeDataModel != null,
+          condition: HomeCubit.get(context).homeDataModel != null && HomeCubit.get(context).categoryModel != null,
           builder: (context) => productsBuilder(
-              HomeCubit.get(context).homeDataModel,
-              HomeCubit.get(context).categoryModel,
+              HomeCubit.get(context).homeDataModel!,
+              HomeCubit.get(context).categoryModel!,
               context),
           fallback: (context) => Center(child: loading),
         );
