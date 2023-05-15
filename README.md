@@ -1,4 +1,6 @@
-Shoplex
+## Shoplex
+
+An online mobile shop app
 
 ## Table of contents
 - [Project Description](#project-description)
@@ -43,5 +45,10 @@ Shoplex
 
 
 - Customize your user.
+
+
+## Author
+
+Nik Jovan
 
   
