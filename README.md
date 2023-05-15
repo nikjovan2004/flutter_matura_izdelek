@@ -1,9 +1,9 @@
-![Shoplex (2)]
+<title>Shoplex</title>
 
 ## Table of contents
 - [Project Description](#project-description)
 - [Tools and Plugins](#tools-and-plugins)
-- [Featues and Screenshots](#featues-and-screenshots)
+- [Features](#features)
 
 ## Project Description
 - Shoplex is a shopping app that allows the user to navigate through products, add products to favorites and customize his own profile.
@@ -30,13 +30,18 @@
   - Flutter Framework
   - Android Studio IDE
 
-## Featues and Screenshots
+## Features 
 
-  
 
-- Now, You can **Login** or **Sign up**. And then, you'll be landed on the **Home Screen**.
+- Now, You can **Login** or **Sign up**. And then, you'll be landed on the **Home Screen/Products Screen**.
 
   
 - You can add any product to favorites and it will appear immediately in the **Favorites Screen**.
+
+
+- You can check out **Categories**.
+
+
+- Customize your user.
 
   
