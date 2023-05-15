@@ -1,4 +1,4 @@
-<title>Shoplex</title>
+Shoplex
 
 ## Table of contents
 - [Project Description](#project-description)
